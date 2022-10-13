@@ -18,16 +18,18 @@
     }
 
     body {
+      margin: 0;
       background-color: hsl(217, 54%, 11%);
     }
 
     main {
-      margin: auto;
-      width: 50%;
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
     }
 
     .container {
-      box-sizing: border-box;
       display: flex;
       flex-flow: column nowrap;
       justify-items: center;
@@ -47,7 +49,7 @@
       width: 302px;
       height: 302px;
       position: absolute;
-      top: 37px;
+      top: 30px;
       border-radius: 10px;
     }
 
