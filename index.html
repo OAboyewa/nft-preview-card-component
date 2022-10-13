@@ -10,24 +10,129 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+    * {
+      font-family: Outfit;
+    }
+
+    body {
+      background-color: hsl(217, 54%, 11%);
+    }
+
+    main {
+      margin: auto;
+      width: 50%;
+    }
+
+    .container {
+      box-sizing: border-box;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-items: center;
+      align-items: center;
+      margin: auto;
+      padding: 30px 40px;
+      width: 375px;
+      background-color: hsl(216, 50%, 16%);
+      border-radius: 20px;
+    }
+
+    picture > img {
+      border-radius: 10px;
+    }
+
+    h2 {
+      align-self: flex-start;
+      margin-bottom: 0;
+      color: hsl(0, 0%, 100%);
+    }
+
+    .container > p:nth-child(3) {
+      margin-bottom: 4px;
+      color: hsl(215, 51%, 70%);
+    }
+
+    .container > p:nth-child(4) {
+      width: 100%;
+    }
+
+    .container > p:nth-child(4) > span:nth-child(1) {
+      display: inline-block;
+      margin: 0;
+      width: 49%;
+      text-align: left;
+      color: hsl(178, 100%, 50%);
+    }
+
+    .container > p:nth-child(4) > span:nth-child(2) {
+      display: inline-block;
+      margin: 0;
+      width: 49%;
+      text-align: right;
+      color: hsl(215, 51%, 70%);
+    }
+
+    .container > p:nth-child(4) > span > img {
+      margin-right: 8px;
+      vertical-align: text-top;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid hsl(215, 32%, 27%);
+      width: 100%;
+    }
+
+    .container > p:nth-child(6) {
+      align-self: flex-start;
+      color: hsl(215, 51%, 70%);
+    }
+
+    .container > p:nth-child(6) > img {
+      width: 35px;
+      margin-right: 16px;
+      vertical-align: middle;
+      border: 1px solid white;
+      border-radius: 20px;
+      
+    }
+
+    .container > p:nth-child(6) > span {
+      color: hsl(0, 0%, 100%);
+    }
+
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
-
-  Equilibrium #3429
-
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <main>
+    <section class="container">
+      <picture>
+        <source srcset="./images/image-equilibrium.jpg 2x">
+        <img src="" alt="" srcset="">
+      </picture>
+      <h2>
+        Equilibrium #3429
+      </h2>
+      <p>
+        Our Equilibrium collection promotes balance and calm.
+      </p>
+      <p>
+        <span><img src="./images/icon-ethereum.svg" alt=""> 0.041 ETH</span>
+        <span><img src="./images/icon-clock.svg" alt=""> 3 days left</span>
+      </p>
+      <hr>
+      <p>
+        <img src="./images/image-avatar.png" alt=""> Creation of <span>Jules Wyvern</span>
+      </p>
+    </section>
+    <!--
+    <section class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </section>-->
+  </main>
 </body>
 </html>
