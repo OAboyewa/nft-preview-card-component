@@ -13,6 +13,7 @@
     @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
     * {
+      box-sizing: border-box;
       font-family: Outfit;
     }
 
@@ -42,10 +43,31 @@
       border-radius: 10px;
     }
 
+    .img {
+      width: 302px;
+      height: 302px;
+      position: absolute;
+      top: 37px;
+      border-radius: 10px;
+    }
+
+    .img:hover {
+      background-image: url("images/icon-view.svg");
+      background-color: hwb(178 0% 0% / 0.5);
+      background-blend-mode: lighten;
+      background-repeat: no-repeat;
+      background-size: 60px;
+      background-position: center;
+    }
+
     h2 {
       align-self: flex-start;
       margin-bottom: 0;
       color: hsl(0, 0%, 100%);
+    }
+
+    h2:hover {
+      color: hsl(178, 100%, 50%);
     }
 
     .container > p:nth-child(3) {
@@ -102,6 +124,10 @@
       color: hsl(0, 0%, 100%);
     }
 
+    .container > p:nth-child(6) > span:hover {
+      color: hsl(178, 100%, 50%);
+    }
+
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
@@ -109,10 +135,14 @@
 <body>
   <main>
     <section class="container">
-      <picture>
-        <source srcset="./images/image-equilibrium.jpg 2x">
-        <img src="" alt="" srcset="">
-      </picture>
+      <div>
+        <picture>
+          <source srcset="./images/image-equilibrium.jpg 2x">
+          <img src="images/image-equilibrium.jpg" alt="" srcset="">
+          <div class="img"></div>
+        </picture>
+        
+      </div>
       <h2>
         Equilibrium #3429
       </h2>
